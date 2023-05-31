@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/untitled"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#46FFFAFA"
+        android:backgroundTint="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        android:entries="@array/spinnerItems"
+        android:text="#B50000" />
+
+    <EditText
+        android:id="@+id/editList"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/EnterList"
+        android:inputType="text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B50000"
+            android:cacheColorHint="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/btnAdd"
+            android:textColor="#FFFFFF" />
+
+
+
+        <Button
+            android:id="@+id/buttonDeleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B50000"
+            android:cacheColorHint="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/btnDelete"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/buttonClearItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#B50000"
+            android:cacheColorHint="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/btnClear"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4DF1EDED"
+        android:backgroundTint="#FFFFFF"
+        android:cacheColorHint="#FFFFFF" />
+
+
+</LinearLayout>
